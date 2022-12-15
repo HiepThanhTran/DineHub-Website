@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Thanh toán - H&H Chicken</title>
+   <link rel="shortcut icon" href="./assets/img/animal-100s-246px.svg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/payment.css">
+   <link rel="stylesheet" href="./assets/css/default.css">
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+   <div class="payment">
+      <div class="payment-form">
+         <div class="information">
+            <p class="name">Thông tin đơn hàng</p>
+            <div class="login">
+               <p>Bạn có đã tài khoản?</p>
+               <a href="" class="js-login">Đăng nhập</a>
+            </div>
+            <div class="information-user">
+               <div class="user">
+                  <label>Họ và tên</label>
+                  <input type="text" placeholder="Họ và tên">
+               </div>
+
+               <div class="user">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email">
+               </div>
+
+               <div class="user">
+                  <label>Số điện thoại</label>
+                  <input type="tel" placeholder="Số điện thoại">
+               </div>
+
+               <div class="user">
+                  <label>Địa chỉ giao hàng</label>
+                  <input type="text" placeholder="Địa chỉ giao hàng">
+               </div>
+            </div>
+
+            <a href="./onlineshop.html" class="back-cart">Giỏ hàng</a>
+         </div>
+
+         <div class="method">
+            <p>Phương thức thanh toán</p>
+            <div class="group-radio" id="payship">
+               <label class="container-radio">
+                  <input type="radio" checked="checked" name="radio">
+                  <span>Thanh toán khi nhận hàng</span>
+                  <span class="checkmark"></span>
+               </label>
+            </div>
+
+            <div class="group-radio" id="pay-online">
+               <label class="container-radio">
+                  <input type="radio" name="radio">
+                  <span>Thanh toán online</span>
+                  <span class="checkmark"></span>
+               </label>
+            </div>
+
+            <div class="choose" id="js-choose">
+               <a href="#">
+                  <div class="app">
+                     <img src="./assets/img/zalo-pay-logo-png-1.png" alt="Zalo">
+                  </div>
+               </a>
+
+               <a href="#">
+                  <div class="app">
+                     <img src="./assets/img/logo-momo-png-1.png" alt="Momo">
+                  </div>
+               </a>
+
+               <a href="#">
+                  <div class="app">
+                     <img src="./assets/img/mobile-banking.svg" alt="Mobile Banking">
+                  </div>
+               </a>
+            </div>
+         </div>
+
+         <div class="submit">
+            <a href="">Thanh toán</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal js-modal">
+      <div class="wrapper" id="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Đăng nhập
+            </div>
+            <div class="title signup">
+               Đăng ký
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Đăng nhập</label>
+               <label for="signup" class="slide signup">Đăng ký</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Tên đăng nhập" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Mật khẩu" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">Quên mật khẩu</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Đăng nhập">
+                  </div>
+                  <div class="signup-link">
+                     Chưa có tài khoản? <a href="">Đăng ký ngay</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Tên đăng nhập" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Mật khẩu" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Xác nhận mật khẩu" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Đăng ký">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Messenger Plugin chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Plugin chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+
+   <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106492978853054");
+      chatbox.setAttribute("attribution", "biz_inbox");
+   </script>
+
+   <!-- Your SDK code -->
+   <script>
+      window.fbAsyncInit = function () {
+         FB.init({
+            xfbml: true,
+            version: 'v14.0'
+         });
+      };
+
+      (function (d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+         fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+   </script>
+   <script src="./assets/js/data.js"></script>
+   <script src="./assets/js/pay.js"></script>
+</body>
+
+</html>

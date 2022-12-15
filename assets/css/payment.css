@@ -1,0 +1,233 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.payment {
+   position: fixed;
+   overflow-y: auto;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   padding: 25px;
+   min-height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      linear-gradient(270deg, #5ebbff 0%, #a174ff 100%);
+}
+
+.payment .payment-form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #272a31;
+   width: 700px;
+   padding: 40px;
+   border-radius: 5px;
+}
+
+.payment .payment-form .information {
+   position: relative;
+}
+
+.payment .payment-form .information .name {
+   font-size: 2rem;
+   color: #ffffffe6;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.payment .payment-form .information .back-cart {
+   text-decoration: none;
+   color: #8ad3ff;
+   text-align: right;
+   margin: 10px 0;
+}
+
+.payment .payment-form .information .back-cart:hover {
+   color: #0058ff;
+}
+
+.payment .payment-form .login {
+   display: flex;
+   margin: 10px 0;
+}
+
+.payment .payment-form .login p {
+   font-size: 1rem;
+   color: #ffffffe6;
+}
+
+.payment .payment-form .login a {
+   text-decoration: none;
+   color: #8ad3ff;
+   margin-left: 8px;
+}
+.payment .payment-form .login a:hover {
+   color: #0058ff;
+}
+.payment .payment-form .method {
+   margin-top: 10px;
+}
+
+.payment .payment-form .information .information-user .user {
+   position: relative;
+   margin: 14px 0;
+}
+
+.payment .payment-form .information .information-user .user label {
+   font-size: 0.85714em;
+   font-weight: normal;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   padding: 0 0.93333em;
+   z-index: 1;
+   user-select: none;
+   transform: translateY(3px);
+   pointer-events: none;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   box-sizing: border-box;
+   opacity: 0;
+   color: #999999;
+   transition: all 0.2s ease-out;
+   margin: 0.5em 0;
+   margin-top: 0.3em;
+   display: block;
+}
+
+.payment .payment-form .information .information-user .user input {
+   box-shadow: 0 0 0 1px #d9d9d9;
+   transition: all 0.2s ease-out;
+   background-color: #ccc;
+   color: #000;
+   border-radius: 4px;
+   display: block;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0.94em 2.8em 0.94em 0.8em;
+   word-break: normal;
+   border: none;
+}
+
+.payment .payment-form .information .information-user .user input:focus {
+   box-shadow: 0 0 0 2px #338dbc;
+   outline: none;
+}
+
+.payment .payment-form .method .choose {
+   display: flex;
+   justify-content: center;
+   opacity: 0;
+   transition: all 0.4s ease-in-out;
+}
+
+.payment .payment-form .method p {
+   font-size: 1.2rem;
+   margin-bottom: 10px;
+   font-weight: bold;
+   color: #0058ff;
+}
+
+.payment .payment-form .method .choose a {
+   margin: 5px 15px;
+}
+
+.payment .payment-form .method .choose a .app img {
+   width: 100%;
+}
+
+.payment .payment-form .method .choose a .app {
+   width: 50px;
+}
+
+.group-radio {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.container-radio {
+   display: flex;
+   position: relative;
+   padding-left: 24px;
+   margin-bottom: 12px;
+   margin-left: 10px;
+   cursor: pointer;
+   font-size: 16px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   color: #ffffffe6;
+}
+
+.container-radio input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 15px;
+   width: 15px;
+   background-color: #eee;
+   border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark {
+   background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark {
+   background-color: #8ad3ff;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+   display: block;
+}
+
+.container-radio .checkmark:after {
+   top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+/* Submit */
+.payment .payment-form .submit {
+   text-align: center;
+   margin-top: 40px;
+}
+.payment .payment-form .submit a {
+   text-decoration: none;
+   padding: 10px;
+   background-image: linear-gradient(
+      to right,
+      #bc4ef2,
+      #4f7ff1,
+      #55a3fc,
+      #b84fe5
+   );
+   border-radius: 5px;
+   color: #000;
+   font-size: 1.2rem;
+   background-size: 300% 100%;
+   transition: all 0.4s ease-in-out;
+}
+.payment .payment-form .submit a:hover {
+   cursor: pointer;
+   background-position: 100% 0;
+}

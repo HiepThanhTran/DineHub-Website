@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Đặt món online - H&H Chicken</title>
+   <link rel="shortcut icon" href="./assets/img/animal-100s-246px.svg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/onlineshop.css">
+   <link rel="stylesheet" href="./assets/css/default.css">
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+   <button id="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
+   <div id="pay">
+      <i class="fa-solid fa-bag-shopping"></i>
+   </div>
+   <div id="cursorMeter">
+      <div id="progressBar"></div>
+   </div>
+   <!-- Begin: Header -->
+   <header>
+      <div class="logo-shop">
+         <a href="./index.html">
+            <img src="./assets/img/logoName-slogan.png" alt="" />
+         </a>
+      </div>
+      <a href="./index.html" class="name-shop">H&H Chicken</a>
+      <div class="menu">
+         <div class="btn-mobile">
+            <i class="fa-solid fa-xmark close-btn"></i>
+         </div>
+         <a href="./index.html">Trang chủ</a>
+         <a href="./introduce.html">Giới thiệu</a>
+         <a href="./promotion.html">Khuyến mãi</a>
+         <a href="./news.html">Tin nổi bật</a>
+         <a href="./feedback.html">Góp ý</a>
+         <a href="" class="js-login">Đăng nhập</a>
+      </div>
+      <div class="btn-mobile">
+         <i class="fa-solid fa-bars menu-btn"></i>
+      </div>
+   </header>
+   <!-- End: Header -->
+
+   <!-- Begin: Main-body -->
+   <div class="container-food">
+      <div class="grid">
+         <div class="row-grid">
+            <div class="col-3 col-12">
+               <div class="menu-sidebar">
+                  <ul class="menu-list">
+                     <li>
+                        <h4 id="movefood">Món ăn</h4>
+                     </li>
+                     <li>
+                        <h4 id="movecombo">Combo H&H Chicken</h4>
+                     </li>
+                     <li>
+                        <h4 id="moveaddfood">Thức ăn kèm</h4>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-5 col-12">
+               <div class="search">
+                  <i class="fa-solid fa-magnifying-glass search-btn"></i>
+                  <input type="text" placeholder="Nhập tên để tìm kiếm sản phẩm ">
+               </div>
+               <div class="food">
+                  <h3 class="food-text">Món ăn</h3>
+               </div>
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/food-1.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Cơm cá phi lê</h4>
+                     <p class="food-des">Cơm cá phi lê ( mặc định )</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-2.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Cơm gà viên sốt Naban</h4>
+                     <p class="food-des">Cơm gà viên sốt Naban ( mặc định ) ăn kèm với đồ chua và kimchi
+                        mayonaise</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-3.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Cơm Hải Sản</h4>
+                     <p class="food-des">Cơm Hải Sản ( mặc định )</p>
+                     <p class="food-price">59,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add "></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-4.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Cơm gà Teriyaki</h4>
+                     <p class="food-des">Cơm gà Teriyaki ( mặc định ) ăn kèm với đồ chua và kimchi mayonaise</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-5.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Cơm gà rán phủ sốt</h4>
+                     <p class="food-des">Gà rán chiên giòn phủ sốt đậm đà</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-6.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Burger Tôm</h4>
+                     <p class="food-price" style="margin-top: 8px;">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-7.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Burger Bò</h4>
+                     <p class="food-price" style="margin-top: 8px;">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-8.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Burger Gà Xé</h4>
+                     <p class="food-des">Gà rán chiên giòn phủ sốt đậm đà</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-9.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Burger Gà Nấm</h4>
+                     <p class="food-des">Burger gà nấm quét một lớp sốt tỏi đậu/sốt cay Topping nấm hảo hạng hòa
+                        quyện với sốt mayonnaise và nấm</p>
+                     <p class="food-price">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div class="food-list">
+                  <div class="food-img">
+                     <img src="./assets/img/menu-10.webp" alt="">
+                  </div>
+                  <div class="food-text">
+                     <h4 class="food-name">Burger Gà Kim Chi</h4>
+                     <p class="food-price" style="margin-top: 8px;">49,000<sup>₫</sup></p>
+                  </div>
+                  <a href="" class="food-add">
+                     <i class="fa-solid fa-plus add"></i>
+                  </a>
+               </div>
+
+               <div id="combo">
+                  <div class="food">
+                     <h3 class="food-text">Combo H&H Chicken</h3>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-1.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">Combo Cơm Cá Phi Lê + Soup</h4>
+                        <p class="food-des">Combo gồm: - 1 Cơm cá phi lê sốt tiêu đen (mặc định) - 1 Nước ngọt
+                           (Pepsi/ 7Up/ Mirinda ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-2.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">Combo Cơm Cá Phi Lê + Nước</h4>
+                        <p class="food-des">Combo gồm: - 1 Cơm cá phi lê sốt tiêu đen (mặc định) - 1 Nước ngọt
+                           (Pepsi/ 7Up/ Mirinda ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-3.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">Combo Cơm Gà Rán Phủ Sốt + Nước</h4>
+                        <p class="food-des">Combo gồm: - 1 Cơm gà (Đùi/ Má/ Cánh) +Phủ sốt (tỏi đậu /tiêu đen
+                           /cay /mè đen /phô mai) - 1 ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-4.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">Combo Cơm Gà Teryzaky + Nước</h4>
+                        <p class="food-des">Combo Cơm Gà Teryzaky gồm: - Cơm gà Teriyaki ( mặc định ) ăn kèm với
+                           đồ chua và kimchi mayonais...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-5.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Combo Cơm Gà Teryzaky + Soup
+                        </h4>
+                        <p class="food-des">Combo Cơm Gà Teryzaky gồm - Cơm gà Teriyaki ( mặc định ) ăn kèm với
+                           đồ chua và kimchi mayo...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-6.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Combo Cơm Gà Viên Sốt Naban + Nước
+                        </h4>
+                        <p class="food-des">1 Cơm gà viên phủ sốt Naban ( mặc định ) ăn kèm với đồ chua và
+                           kimchi mayonaise - 1 Nước ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-7.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Combo Cơm Gà Viên Sốt Naban + Soup
+                        </h4>
+                        <p class="food-des">1 Cơm gà viên phủ sốt Naban ( mặc định ) ăn kèm với đồ chua và
+                           kimchi mayonaise - 1 Soup ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-8.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Combo Cơm Hải Sản + Nước
+                        </h4>
+                        <p class="food-des">Combo gồm: - 1 Cơm hải sản sốt tiêu đen (mặc định) - 1 Nước ngọt
+                           (Pepsi/ 7Up/ Mirinda cam)</p>
+                        <p class="food-price">69,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-10.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Combo Cơm Hải Sản + Soup
+                        </h4>
+                        <p class="food-des">1 Cơm hải sản sốt tiêu đen (mặc định) - 1 Soup ( Kimchi/ Gà rau củ )
+                        </p>
+                        <p class="food-price">69,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-11.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           French Fried Burger Combo
+                        </h4>
+                        <p class="food-des">Combo gồm: - 1 Burger tự chọn (Gà xé/ Gà nấm/ Gà Kim Chi/ Bò/ Tôm) -
+                           1 Khoai tây lắc size S (P...</p>
+                        <p class="food-price">79,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add ">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-12.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Funny Combo
+                        </h4>
+                        <p class="food-des">15 miếng gà</p>
+                        <p class="food-price">499,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/combo-13.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Yummy Combo
+                        </h4>
+                        <p class="food-des">20 Miếng gà. Khách hàng có thể chọn Đùi/ Má/ Cánh</p>
+                        <p class="food-price">649,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div id="extra-food">
+                  <div class="food">
+                     <h3 class="food-text">Thức ăn kèm</h3>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-1.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Mỳ Trộn Otoke
+                        </h4>
+                        <p class="food-des">1 Phần Sụn Gà Lắc Sốt + Sốt: Phô Mai/Xí Muội</p>
+                        <p class="food-price">39,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-2.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Set 5 Bánh Gà Rau Củ
+                        </h4>
+                        <p class="food-des">Combo bao gồm: - Set 5 bánh gà rau củ - Sốt Tartar chua ngọt/ Sốt
+                           phô mai thơm béo ...</p>
+                        <p class="food-price">59,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-3.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Set 3 Bánh Gà Rau Củ
+                        </h4>
+                        <p class="food-des">Combo bao gồm: - Set 3 bánh gà rau củ - Sốt Tartar chua ngọt/ Sốt
+                           phô mai thơm béo ...</p>
+                        <p class="food-price">39,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-4.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Khoai Tây Lắc Phô Mai
+                        </h4>
+                        <p class="food-des">Khoai tây lắc phô mai</p>
+                        <p class="food-price">39,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-5.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Cơm Gạo Nhật
+                        </h4>
+                        <p class="food-des">Cơm gạo Nhật</p>
+                        <p class="food-price">15,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-6.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Canh Gà Rau Củ
+                        </h4>
+                        <p class="food-des">Canh Gà Rau Củ</p>
+                        <p class="food-price">15,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-7.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Canh Kim Chi
+                        </h4>
+                        <p class="food-des">Canh Kim Chi</p>
+                        <p class="food-price">15,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-8.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Gà Viên Sốt Phô Mai
+                        </h4>
+                        <p class="food-des">Gà Viên Sốt Phô Mai</p>
+                        <p class="food-price">49,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-9.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Hải Sản Chiên Xù
+                        </h4>
+                        <p class="food-des">Hải Sản Chiên Xù</p>
+                        <p class="food-price">49,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-10.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Khoai Tây Lắc Rong Biển
+                        </h4>
+                        <p class="food-des">Khoai Tây Lắc Rong Biển</p>
+                        <p class="food-price">39,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-11.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Salad Hải Sản
+                        </h4>
+                        <p class="food-des">Salad - đảm bảo cân bằng bữa ăn, cung cấp vitamin & chất xơ từ các
+                           loại rau củ xanh và giúp điề...</p>
+                        <p class="food-price">55,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+
+                  <div class="food-list">
+                     <div class="food-img">
+                        <img src="./assets/img/extra-food-12.webp" alt="">
+                     </div>
+                     <div class="food-text">
+                        <h4 class="food-name">
+                           Salad Gà
+                        </h4>
+                        <p class="food-des">Salad gà - đảm bảo cân bằng bữa ăn, cung cấp vitamin & chất xơ từ
+                           các loại rau củ xanh và giúp ...</p>
+                        <p class="food-price">49,000<sup>₫</sup></p>
+                     </div>
+                     <a href="" class="food-add">
+                        <i class="fa-solid fa-plus add"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-4 col-12">
+               <div class="cart">
+                  <div class="cart-top">
+                     <a href="./payment.html" target="_blank" class="disabled">Thanh toán</a>
+                  </div>
+
+                  <div id="shopping-carts" class="shopping-item">
+
+                  </div>
+
+                  <div class="cart-bottom">
+                     <div class="all">
+                        <p>Tổng cộng: (<span id="amount-food">0</span> món )</p>
+                     </div>
+
+                     <div class="price-cart">
+                        <p><span id="sum-food">0<sup>₫</sup></span></p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End: Main-body -->
+
+   <!-- Begin: Footer -->
+   <div class="top-footer">
+      <div class="top-footer-row">
+         <div class="top-footer-col-8">
+            <h4>
+               <i class="fa-solid fa-envelope-open-text"></i>
+               Đăng kí nhận tin
+            </h4>
+            <form class="form" action="">
+               <input required type="email" placeholder="Nhập email của bạn...">
+               <button class="submit">Đăng kí</button>
+            </form>
+         </div>
+         <div class="top-footer-col-4">
+            <h4>
+               <i class="fa fa-phone phone"></i>
+               Đặt hàng/ Hỗ trợ: <a href="tel:19001234">1900.1234</a>
+            </h4>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="footer-col">
+               <h4>Hỗ trợ khách hàng</h4>
+               <ul>
+                  <li>
+                     <a href="javascript:;">Hướng dẫn đặt hàng</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Hướng dẫn thanh toán</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Giao hàng</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Đổi trả</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>Chính sách</h4>
+               <ul>
+                  <li>
+                     <a href="javascript:;">Chính sách bảo mật</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Điều khoản dịch vụ</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Cam kết</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Các điều khoản chung</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>Về H&H Chicken</h4>
+               <ul>
+                  <li>
+                     <a href="./introduce.html">Giới thiệu</a>
+                  </li>
+                  <li>
+                     <a href="./promotion.html">Khuyến mãi</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Flash sale</a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">Combo ngon bổ rẻ</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>Theo dõi chúng tôi</h4>
+               <div class="social-links">
+                  <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="javascript:;"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:;"><i class="fa-brands fa-tiktok"></i></a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      </div>
+   </footer>
+   <div class="copyright">
+      <p>Copyright &copy 2022 - Bản quyền thuộc về H&H Chicken</p>
+   </div>
+   <!-- End: Footer -->
+
+   <!-- Begin: Modal -->
+   <div class="modal js-modal">
+      <div class="wrapper" id="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Đăng nhập
+            </div>
+            <div class="title signup">
+               Đăng ký
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Đăng nhập</label>
+               <label for="signup" class="slide signup">Đăng ký</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Tên đăng nhập" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Mật khẩu" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">Quên mật khẩu</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Đăng nhập">
+                  </div>
+                  <div class="signup-link">
+                     Chưa có tài khoản? <a href="">Đăng ký ngay</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Tên đăng nhập" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Mật khẩu" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Xác nhận mật khẩu" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Đăng ký">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End: Modal -->
+
+   <!-- Begin: Modal-food -->
+   <div class="modal-food">
+      <div id=wrapper-1 class="modal-body">
+         <div class="row-grid">
+            <div class="col-6 col-12">
+               <div class="modal-food-img">
+                  <img src="assets/img/menu-1.webp" alt="">
+               </div>
+            </div>
+
+            <div class="col-6 col-12">
+               <div class="modal-food-des">
+                  <h3 class="modal-food-name">Cơm cá phi lê</h3>
+                  <p class="modal-food-price">49,000<sup>đ</sup></p>
+               </div>
+
+               <div class="group-radio">
+                  <label class="container-radio">
+                     <input type="radio" checked="checked" name="radio">
+                     <span>Sốt tiêu đen</span>
+                     <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-radio">
+                     <input type="radio" name="radio">
+                     <span>Sốt mè đen</span>
+                     <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-radio">
+                     <input type="radio" name="radio">
+                     <span>Sốt phô mai</span>
+                     <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-radio">
+                     <input type="radio" name="radio">
+                     <span>Sốt tỏi</span>
+                     <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-radio">
+                     <input type="radio" name="radio">
+                     <span>Sốt cay</span>
+                     <span class="checkmark"></span>
+                  </label>
+               </div>
+
+               <div class="number">
+                  <p>Số lượng:</p>
+                  <a href="" class="btn-minus">
+                     <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <p class="number-var">1</p>
+                  <a href="" class="btn-plus">
+                     <i class="fa-solid fa-plus plus"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="note">
+            <p>Ghi chú:</p>
+            <div class="form-note">
+               <i class="fa-solid fa-pencil"></i>
+               <input type="text" placeholder="Thêm ghi chú món này">
+            </div>
+         </div>
+
+         <div class="add-to-cart">
+            <a href="">
+               Thêm vào giỏ hàng
+            </a>
+         </div>
+
+         <div id="btn-close">
+            <a href="">
+               <i class="fa-solid fa-xmark"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Messenger Plugin chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Plugin chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+
+   <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106492978853054");
+      chatbox.setAttribute("attribution", "biz_inbox");
+   </script>
+
+   <!-- Your SDK code -->
+   <script>
+      window.fbAsyncInit = function () {
+         FB.init({
+            xfbml: true,
+            version: 'v14.0'
+         });
+      };
+
+      (function (d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+         fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+   </script>
+   <!-- End: Modal-food -->
+   <script src="./assets/js/data.js"></script>
+   <script src="./assets/js/order-online.js"></script>
+</body>
+
+</html>
